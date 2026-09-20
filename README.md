@@ -1,18 +1,20 @@
 <div class="header" align="center">
-<img alt="Panta Rhei Logo" width="128" height="128" src="https://raw.githubusercontent.com/Floof-Station/Panta-Rhei/master/Resources/Textures/Logo/logo.png" />
+<img alt="Termina Logo" width="256" height="128" src="https://raw.githubusercontent.com/hailofthenight/termina/master/Resources/Textures/Logo/logo.png" />
 </div>
 
-## Panta Rhei is the code name of the endeavor to rebase [Floof Station](https://github.com/Floof-Station/Floof-Station) on top of [Delta-V](https://github.com/DeltaV-Station/Delta-v).
+## Termina is a fork of Panta Rhei (A.K.A. Euphoria Station.)
+<!--
+Panta Rhei is the code name of the endeavor to rebase [Floof Station](https://github.com/Floof-Station/Floof-Station) on top of [Delta-V](https://github.com/DeltaV-Station/Delta-v).
 
-Panta Rhei is a fork of [Delta-V](https://github.com/DeltaV-Station/Delta-v), which is a fork of [Space Station 14](https://github.com/space-wizards/space-station-14), embracing a mixture of classic SS13 chaos and experimentation only possible with the new engine.
+-# Panta Rhei is a fork of [Delta-V](https://github.com/DeltaV-Station/Delta-v), which is a fork of [Space Station 14](https://github.com/space-wizards/space-station-14), embracing a mixture of classic SS13 chaos and experimentation only possible with the new engine.
 
 Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), a homegrown engine written in C#.
 
 ### Panta Rhei is a continuation of the [Nyanotrasen](https://www.nyanotrasen.moe/) fork. Any work done in a non-base namespace may contain incorrect attributes due to rewrites and recommitting.
 ### Any work done in a non-base namespace may contain incorrect attributions due to rewrites and recommitting.
-
+-->
 ## Links
-
+<!--
 #### Panta Rhei
 <div class="header" align="center">
 
@@ -32,7 +34,7 @@ Space Station 14 is a remake of SS13 that runs on [Robust Toolbox](https://githu
 <div class="header" align="center">
 
 [Website](https://spacestation14.io/) | [Discord](https://discord.ss14.io/) | [Forum](https://forum.spacestation14.io/) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.io/about/nightlies/)
-
+-->
 </div>
 
 ## Documentation/Wiki
@@ -44,9 +46,9 @@ Additionally, see these resources for license and attribution information:
 
 ## Contributing
 
-We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/Floof-Station/Panta-Rhei/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
+We are happy to accept contributions from anybody. Get in Discord if you want to help. We've got a [list of issues](https://github.com/hailofthenight/termina/issues) that need to be done and anybody can pick them up. Don't be afraid to ask for help either!
 
-Make sure to read [CONTRIBUTING.md](/CONTRIBUTING.md) if you are new to Panta Rhei!
+Make sure to read [CONTRIBUTING.md](/CONTRIBUTING.md) if you are new to Termina
 
 ## AI-generated contributions disclaimer
 This project does not accept low-effort or wholesale AI-generated contributions. Examples include, but are not limited to:
@@ -55,17 +57,17 @@ This project does not accept low-effort or wholesale AI-generated contributions.
 - AI-created artwork, sound files, or other assets.
 - Auto-generated documentation, issue reports or pull request descriptions.
 
-Exceptions to this are simple tools like Rider's single-line completion feature.
+Exceptions to this are simple tools like Rider's or Visual Studio's single-line completion feature.
 
 ## Building
 
 1. Clone this repo:
 ```shell
-git clone https://github.com/Floof-Station/Panta-Rhei.git
+git clone https://github.com/hailofthenight/termina.git
 ```
 2. Go to the project folder and run `RUN_THIS.py` to initialize the submodules and load the engine:
 ```shell
-cd Panta-Rhei
+cd termina
 python RUN_THIS.py
 ```
 3. Compile the solution:
