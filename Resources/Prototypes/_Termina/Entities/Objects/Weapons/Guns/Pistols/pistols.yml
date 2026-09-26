@@ -1,0 +1,16 @@
+- type: entity
+  name: Plock 
+  parent: [BaseWeaponPistol, BaseHighlyIllegalContraband]
+  id: WeaponPistolPlock
+  description: A banned import pistol that security wont be happy to see you with.
+  components:
+  - type: Sprite
+    sprite: _Termina/Objects/Weapons/Guns/Pistols/plock.rsi
+  - type: Item
+    storedOffset: 0,-2
+  - type: Gun
+    fireRate: 12
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/_Termina/Weapons/Guns/Gunshots/plock.ogg
