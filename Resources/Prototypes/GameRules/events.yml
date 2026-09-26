@@ -156,7 +156,7 @@
   - type: StationEvent
     weight: 10
     duration: 1
-    minimumPlayers: 15
+    minimumPlayers: 100 # Termina - No.
   - type: PrecognitionResult # DeltaV - Precogniton
     message: psionic-power-precognition-breaker-flip-result-message
   - type: BreakerFlipRule
