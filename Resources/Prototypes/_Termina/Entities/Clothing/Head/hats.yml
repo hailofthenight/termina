@@ -1,7 +1,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatDunce
-  name: dunce Cap
+  name: dunce cap
   description: for the finest of personnel
   components:
   - type: Sprite
