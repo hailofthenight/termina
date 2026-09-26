@@ -93,8 +93,7 @@
     - id: ClothingHandsGlovesLatex
     - id: ClothingHeadsetMedical
     - id: ClothingMaskSterile
-    - id: HandLabeler
-      prob: 0.5
+    - id: HandLabeler #Termina
 
 - type: entity
   parent: LockerChemistry

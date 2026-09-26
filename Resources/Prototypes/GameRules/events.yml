@@ -156,7 +156,7 @@
   - type: StationEvent
     weight: 10
     duration: 1
-    minimumPlayers: 15
+    minimumPlayers: 100 # Termina - No.
   - type: PrecognitionResult # DeltaV - Precogniton
     message: psionic-power-precognition-breaker-flip-result-message
   - type: BreakerFlipRule
@@ -355,7 +355,7 @@
     weight: 2 # DeltaV - was 7.5, lowered because of GlimmerRevenantSpawn event
     duration: 1
     earliestStart: 45
-    minimumPlayers: 20
+    minimumPlayers: 16 # Termina
   - type: PrecognitionResult # DeltaV - Precogniton
     message: psionic-power-precognition-revenant-spawn-result-message
   - type: RandomSpawnRule
@@ -370,7 +370,7 @@
     duration: 1
     earliestStart: 30
     reoccurrenceDelay: 60
-    minimumPlayers: 20
+    minimumPlayers: 25 # Termina
   - type: AntagSelection
     agentName: wizard-round-end-name
     definitions:
@@ -444,15 +444,15 @@
   parent: BaseStationEventShortDelay
   components:
   - type: StationEvent
-    weight: 10
+    weight: 8 # Termina - jsid's half the departments just for the prisoner not to escape so whats the point???
     startAnnouncement: station-event-power-grid-check-start-announcement
     endAnnouncement: station-event-power-grid-check-end-announcement
     startAudio:
       path: /Audio/_Euphoria/Announcements/power_off.ogg # Euphoria - New Voice Lines
       params:
         volume: -4
-    duration: 60
-    maxDuration: 120
+    duration: 20 # Termina
+    maxDuration: 50 # Termina
   - type: PrecognitionResult # DeltaV - Precogniton
     message: psionic-power-precognition-power-grid-check-result-message
   - type: PowerGridCheckRule
@@ -462,17 +462,17 @@
   id: SolarFlare
   components:
   - type: StationEvent
-    weight: 10
+    weight: 8 # Termina its annoying
     startAnnouncement: station-event-solar-flare-start-announcement
     endAnnouncement: station-event-solar-flare-end-announcement
     startAudio:
       path: /Audio/_Euphoria/Announcements/solar_start.ogg # Euphoria - New Voice Lines
-    duration: 120
-    maxDuration: 240
+    duration: 10 # Termina
+    maxDuration: 90 # Termina
   - type: PrecognitionResult # DeltaV - Precogniton
     message: psionic-power-precognition-solar-flare-result-message
   - type: SolarFlareRule
-    onlyJamHeadsets: true
+    onlyJamHeadsets: false # Termina
     affectedChannels:
     - Common
     extraChannels:
@@ -485,6 +485,7 @@
     - Supply
     - Justice # DeltaV - Add DeltaV specific channels
     - Prison # DeltaV - Add DeltaV specific channels
+#    - Centcomm # Termina - cc jobs arent added yet i dont think
     extraCount: 3 # DeltaV - was 2
     lightBreakChancePerSecond: 0.0003
     doorToggleChancePerSecond: 0.001
@@ -498,7 +499,7 @@
     startAudio:
       path: /Audio/_Euphoria/Announcements/ventclog.ogg # Euphoria - New Voice Lines
     earliestStart: 20 # DeltaV - was 15
-    minimumPlayers: 15
+    minimumPlayers: 10 # Termina - nothingburger 50% of the time 
     weight: 7.5 # DeltaV - was 5
     duration: 60
   - type: PrecognitionResult # DeltaV - Precogniton
@@ -516,8 +517,8 @@
     startAudio:
       path: /Audio/_Euphoria/Announcements/aliens.ogg # Euphoria - New Voice Lines
     earliestStart: 20
-    minimumPlayers: 15
-    weight: 5
+    minimumPlayers: 12 # Termina
+    weight: 6 # Termina - the waterbottle in question:
     duration: 30 # DeltaV: was 60, used as a delay now
   - type: PrecognitionResult # DeltaV - Precogniton
     message: psionic-power-precognition-slimes-spawn-result-message
@@ -537,7 +538,7 @@
     startAnnouncement: station-event-vent-creatures-start-horde-announcement
     startAudio:
       path: /Audio/_Euphoria/Announcements/aliens.ogg # Euphoria - New Voice Lines
-    earliestStart: 20
+    earliestStart: 25 # Termina
     minimumPlayers: 15
     weight: 5
     duration: 30 # DeltaV: was 60, used as a delay now
@@ -559,9 +560,9 @@
     startAnnouncement: station-event-vent-creatures-start-horde-announcement
     startAudio:
       path: /Audio/_Euphoria/Announcements/aliens.ogg # Euphoria - New Voice Lines
-    earliestStart: 20
-    minimumPlayers: 15
-    weight: 5
+    earliestStart: 18 # Termina
+    minimumPlayers: 12 # Termina
+    weight: 6 # Termina - spiders aint allat
     duration: 30 # DeltaV: was 60, used as a delay now
   - type: PrecognitionResult # DeltaV - Precogniton
     message: psionic-power-precognition-spider-spawn-result-message
@@ -581,7 +582,7 @@
       path: /Audio/_Euphoria/Announcements/aliens.ogg # Euphoria - New Voice Lines
     earliestStart: 45 # DeltaV - was 20
     minimumPlayers: 30 # DeltaV - was 20
-    weight: 1 # DeltaV - was 1.5
+    weight: 2 # Termina
     duration: 30 # DeltaV: was 60, used as a delay now
   - type: PrecognitionResult # DeltaV - Precogniton
     message: psionic-power-precognition-spider-clown-spawn-result-message
@@ -636,8 +637,8 @@
   components:
   - type: StationEvent
     earliestStart: 45 # DeltaV - was 35
-    weight: 3 # DeltaV - was 5.5
-    minimumPlayers: 30 # DeltaV - was 20
+    weight: 2 # Termina 
+    minimumPlayers: 25 # Termina
     reoccurrenceDelay: 30 # DeltaV
     duration: null # LoneOpsSpawn needs an infinite duration so that it inherits the NukeOpsRule things of an actually appropriate end scrreen (not always "Neutral outcome!") and... ending the game if the station is nuked.
   - type: PrecognitionResult # DeltaV - Precogniton
@@ -681,9 +682,9 @@
   id: SleeperAgents
   components:
   - type: StationEvent
-    earliestStart: 30
-    weight: 5 # DeltaV - Was 8 now 5
-    minimumPlayers: 15
+    earliestStart: 10 # Termina it happens once per round only anyway so who tf cares if it happens at the start
+    weight: 4 # Termina
+    minimumPlayers: 18 # Termina
     maxOccurrences: 1 # can only happen once per round
     #startAnnouncement: station-event-communication-interception # DeltaV - Silent Sleepers
     #startAudio:
@@ -713,14 +714,14 @@
   components:
   - type: StationEvent
     weight: 10
-    duration: 150
+    duration: 60 # Termina
     maxDuration: 300
   - type: PrecognitionResult # DeltaV - Precogniton
     message: psionic-power-precognition-mass-hallucinations-result-message
   - type: MassHallucinationsRule
-    minTimeBetweenIncidents: 30 # DeltaV - was 0.1
+    minTimeBetweenIncidents: 10 # Termina
     maxTimeBetweenIncidents: 300
-    maxSoundDistance: 7
+    maxSoundDistance: 9 # Termina
     sounds:
       collection: Paracusia
 # Ion Storm
@@ -755,9 +756,9 @@
   - type: StationEvent
     startAudio:
       path: /Audio/_Euphoria/Announcements/subroutine.ogg # Euphoria - New Voice Lines
-    weight: 5
+    weight: 4 # Termina - should be rare
     minimumPlayers: 25
-    reoccurrenceDelay: 20
+    reoccurrenceDelay: 30 # Termina
   - type: GreytideVirusRule
     accessGroups:
     - Cargo
@@ -767,7 +768,7 @@
     - Security
     - Service
     blacklist:
-    - External # don't space everything
+    - External # don't space everything # Termina - what if i want it to
 # Smuggler stash
 - type: entity
   parent: BaseGameRule
